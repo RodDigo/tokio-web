@@ -14,7 +14,6 @@ export class TransferenciaService {
   response = [];
 
   public create(transferencia: Transferencia) {
-    console.log("Valor pego  ", transferencia)
     this._http.post<Transferencia>(`${AbstractService.baseUrl}transferencia/create`, transferencia).pipe(map(result => {
     })).subscribe((d:any) => {
       this.response.push();
@@ -22,7 +21,6 @@ export class TransferenciaService {
   }
 
   public listall():  Observable<Transferencia[]>{
-    console.log(`${AbstractService.baseUrl}transferencia/getAll`);
     return listAll(this._http, `${AbstractService.baseUrl}transferencia/getAll`);
   }
 

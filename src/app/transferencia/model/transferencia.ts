@@ -7,4 +7,6 @@ export class Transferencia {
     taxa: number;
     taxaFixa: number;
     total: number;
+    idContaOrigem: number;
+    idContaDestino: number;
 }

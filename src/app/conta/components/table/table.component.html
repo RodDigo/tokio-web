@@ -1,0 +1,20 @@
+<div class="table-responsive">
+    <table class="table table-sm table-striped-row">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Titular</th>
+                <th scope="col">Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (object of contas | async; track $index){
+                <tr >
+                    <td>{{object.id}}</td>
+                    <td>{{object.titular}}</td>
+                    <td>{{object.valor}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

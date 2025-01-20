@@ -1,0 +1,18 @@
+<div class="container">
+    
+    <form [formGroup]="formGroup">
+
+        <h1 style="margin-top: 10px;">Nova Conta</h1>
+        
+        <div class="input-group mb-3">
+            <input id="startDate" class="form-control" formControlName="titular"  placeholder="Nome Titular" type="text" />
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="number"  class="form-control rounded-5" formControlName="valor" placeholder="Valor" aria-describedby="basic-addon2">
+        </div>
+
+        <button type="button" class="btn btn-primary" (click)="save()">Salvar</button>
+       
+    </form>
+</div>

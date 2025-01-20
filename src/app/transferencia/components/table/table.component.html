@@ -1,0 +1,28 @@
+<div class="table-responsive">
+    <table class="table table-sm table-striped-row">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Transferêcia</th>
+                <th scope="col">Agendamento</th>
+                <th scope="col">Taxa</th>
+                <th scope="col">TaxaFixa</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (object of transferencias | async; track $index){
+                <tr >
+                    <td>{{object.id}}</td>
+                    <td>{{object.valor}}</td>
+                    <td>{{object.dtTransferencia}}</td>
+                    <td>{{object.dtAgendamento}}</td>
+                    <td>{{object.taxa}}</td>
+                    <td>{{object.taxaFixa}}</td>
+                    <td>{{object.total}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

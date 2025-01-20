@@ -1,0 +1,11 @@
+td img {
+    width: 75%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+td img:hover {
+    transform: scale(8.1);
+    transform-origin: center;
+}

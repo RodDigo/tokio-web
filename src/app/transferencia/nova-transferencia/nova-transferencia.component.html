@@ -1,0 +1,17 @@
+<div class="container">
+    <form [formGroup]="formGroup">
+
+        <h1 style="margin-top: 10px;">Nova Transferência</h1>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control rounded-5" formControlName="valor" placeholder="Valor" aria-describedby="basic-addon2">
+        </div>
+
+        <div class="input-group mb-3">
+            <input id="startDate" class="form-control" formControlName="dtTransferencia"  placeholder="Data da Transferência" type="date" />
+        </div>
+
+        <button type="button" class="btn btn-primary" (click)="save()">Salvar</button>
+       
+    </form>
+</div>
